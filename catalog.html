@@ -74,9 +74,11 @@
               <span class = "form-slider-handler max"></span>
             </div>
             <p>
-              <input class = "form-slider-minprice" type = "text" value = "0">
+              <label class = "visually-hidden" for = "form-slider-minprice">Минимальная цена</label>
+              <input class = "form-slider-minprice" id = "form-slider-minprice" type = "text" value = "0">
               <span>—</span>
-              <input class = "form-slider-maxprice" type = "text" value = "5000">
+              <label class = "visually-hidden" for = "form-slider-maxprice">Максимальная цена</label>
+              <input class = "form-slider-maxprice" id = "form-slider-maxprice" type = "text" value = "5000">
             </p>
           </fieldset>
           <fieldset>
@@ -98,7 +100,7 @@
             <label><input class = "form-radio" type = "radio" name = "feed-type" id = "radio-item-2"
                           value = 2>hitachi</label>
           </fieldset>
-          <input type = "submit" value = "показать">
+          <input class = "action-btn" type = "submit" value = "показать">
         </form>
       </div>
       <div class = "catalog-instruments">
@@ -201,11 +203,11 @@
           </li>
         </ul>
         <ol class = "paginator">
-          <li class = "prev-page">передыдущая</li>
-          <li class = "active-page">1</li>
-          <li>2</li>
-          <li>3</li>
-          <li class = "next-page">следующая</li>
+          <li class = "prev-page action-btn"><a href = "#">передыдущая</a></li>
+          <li class = "active-page action-btn"><a href = "#">1</a></li>
+          <li class = "paginator-page action-btn"><a href = "#">2</a></li>
+          <li class = "paginator-page action-btn"><a href = "#">3</a></li>
+          <li class = "next-page action-btn"><a href = "#">следующая</a></li>
         </ol>
       </div>
     </div>
