@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-  <meta charset="utf-8">
+  <meta charset = "utf-8">
   <title>HTML Academy: Техномарт каталог</title>
+  <link href = "css/normalize.css" rel = "stylesheet">
+  <link href = "css/style.css" rel = "stylesheet">
 </head>
 <body>
 <!-- Шапка сайта -->
@@ -10,10 +12,10 @@
   <h1 class = "visually-hidden">Каталог техномарт</h1>
   <section class = "main-user-menu">
     <h2 class = "visually-hidden">основная навигация</h2>
-    <a class="market-logo" href = "#">Техномарт</a>
-    <input class = "main-search" type ="text" name = "search" placeholder = "Поиск:">
-    <a class = "bookmarks" href = "#">Закладки: <span class="bookmarks-amount">0</span></a>
-    <a class = "basket full" href = "#">Корзина: <span class="goods-amount">10</span></a>
+    <a class = "market-logo" href = "#">Техномарт</a>
+    <input class = "main-search" type = "text" name = "search" placeholder = "Поиск:">
+    <a class = "bookmarks" href = "#">Закладки: <span class = "bookmarks-amount">0</span></a>
+    <a class = "basket full" href = "#">Корзина: <span class = "goods-amount">10</span></a>
     <a class = "checkout" href = "#">Оформить заказ</a>
   </section>
   <div class = "header-middle">
@@ -32,7 +34,7 @@
     <ul class = "user-navigation">
       <li><a class = "user-name" href = "#">Равшан Джамшутович</a></li>
       <li>
-        <ul class="user-info">
+        <ul class = "user-info">
           <li><a href = "#">Мои заказы</a></li>
           <li><a href = "#">Личный кабинет</a></li>
         </ul>
@@ -61,15 +63,15 @@
         <li><a class = "breadcrambs-punkt" href = "#">инструмент</a></li>
         <li><a class = "breadcrambs-punkt" href = "#">перфораторы</a></li>
       </ul>
-      <h2 class = "catalog-instrument-type">перфораторы</h2>
+      <h2 class = "section-title">перфораторы</h2>
       <div class = "catalog-filter">
         <h3 class = "catalog-filter-caption">фильтр:</h3>
         <form class = "catalog-filter-form">
           <fieldset>
             <legend class = "form-legend">цена:</legend>
             <div class = "form-slider">
-              <span class="form-slider-handler min"></span>
-              <span class="form-slider-handler max"></span>
+              <span class = "form-slider-handler min"></span>
+              <span class = "form-slider-handler max"></span>
             </div>
             <p>
               <input class = "form-slider-minprice" type = "text" value = "0">
@@ -79,16 +81,22 @@
           </fieldset>
           <fieldset>
             <legend class = "form-legend">производители:</legend>
-            <label><input class= "form-checkbox" type = "checkbox" name = "brand" id = "checkbox-item-1" value = "bosch" checked>bosch</label>
-            <label><input class= "form-checkbox" type = "checkbox" name = "brand" id = "checkbox-item-2" value = "interscol">интерскол</label>
-            <label><input class= "form-checkbox" type = "checkbox" name = "brand" id = "checkbox-item-3" value = "makita" checked>makita</label>
-            <label><input class= "form-checkbox" type = "checkbox" name = "brand" id = "checkbox-item-4" value = "dewalt">dewalt</label>
-            <label><input class= "form-checkbox" type = "checkbox" name = "brand" id = "checkbox-item-5" value = "hitachi">hitachi</label>
+            <label><input class = "form-checkbox" type = "checkbox" name = "brand" id = "checkbox-item-1"
+                          value = "bosch" checked>bosch</label>
+            <label><input class = "form-checkbox" type = "checkbox" name = "brand" id = "checkbox-item-2"
+                          value = "interscol">интерскол</label>
+            <label><input class = "form-checkbox" type = "checkbox" name = "brand" id = "checkbox-item-3"
+                          value = "makita" checked>makita</label>
+            <label><input class = "form-checkbox" type = "checkbox" name = "brand" id = "checkbox-item-4"
+                          value = "dewalt">dewalt</label>
+            <label><input class = "form-checkbox" type = "checkbox" name = "brand" id = "checkbox-item-5"
+                          value = "hitachi">hitachi</label>
           </fieldset>
           <fieldset>
             <legend class = "form-legend">питание:</legend>
-            <label><input class= "form-radio" type = "radio" name = "feed-type" id = "radio-item-1" value = 1 checked>dewalt</label>
-            <label><input class= "form-radio" type = "radio" name = "feed-type" id = "radio-item-2" value = 2>hitachi</label>
+            <label><input class = "form-radio" type = "radio" name = "feed-type" id = "radio-item-1" value = 1 checked>dewalt</label>
+            <label><input class = "form-radio" type = "radio" name = "feed-type" id = "radio-item-2"
+                          value = 2>hitachi</label>
           </fieldset>
           <input type = "submit" value = "показать">
         </form>
@@ -96,16 +104,16 @@
       <div class = "catalog-instruments">
         <div class = "catalog-filter-caption">
           <h3 class = "catalog-sorting">сортировка:</h3>
-          <a class="catalog-sortby-price" href = "#">по цене</a>
-          <a class="catalog-sortby-type" href = "#">по типу</a>
-          <a class="catalog-sortby-function" href = "#">по функционалу</a>
-          <a class="catalog-sortby-ascend" href = "#">по возрастанию</a>
-          <a class="catalog-sortby-descend" href = "#">по убыванию</a>
+          <a class = "catalog-sortby-price" href = "#">по цене</a>
+          <a class = "catalog-sortby-type" href = "#">по типу</a>
+          <a class = "catalog-sortby-function" href = "#">по функционалу</a>
+          <a class = "catalog-sortby-ascend" href = "#">по возрастанию</a>
+          <a class = "catalog-sortby-descend" href = "#">по убыванию</a>
         </div>
-        <ul class="goods-list">
+        <ul class = "goods-list">
           <li class = "goods-item">
-            <img class = "goods-image" src="img/..." alt = "Перфоратор BOSCH BFG 3000">
-            <img class = "goods-new" src="img/..."  alt = "новинка">
+            <img class = "goods-image" src = "img/Bosch_BFG_3000.jpg" alt = "Перфоратор BOSCH BFG 3000" width = "218">
+            <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
             <a class = "goods-in-basket" href = "#">купить</a>
             <a class = "goods-in-bookmarks" href = "#">в закладки</a>
             <h3 class = "goods-model">Перфоратор BOSCH BFG 3000</h3>
@@ -113,8 +121,9 @@
             <p class = "goods-price">15500 Р.</p>
           </li>
           <li class = "goods-item">
-            <img class = "goods-image" src="img/..." alt = "Перфоратор BOSCH BFG 6000">
-            <img class = "goods-new" src="img/..."  alt = "новинка">
+            <img class = "goods-image" src = "img/Bosch_BFG_6000.jpg" alt = "Перфоратор BOSCH BFG 6000" width = "218"
+                 height = "150">
+            <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
             <a class = "goods-in-basket" href = "#">купить</a>
             <a class = "goods-in-bookmarks" href = "#">в закладки</a>
             <h3 class = "goods-model">Перфоратор BOSCH BFG 6000</h3>
@@ -122,8 +131,9 @@
             <p class = "goods-price">25500 Р.</p>
           </li>
           <li class = "goods-item">
-            <img class = "goods-image" src="img/..." alt = "Перфоратор BOSCH BFG 2000">
-            <img class = "goods-new" src="img/..."  alt = "новинка">
+            <img class = "goods-image" src = "img/Bosch_BFG_2000.jpg" alt = "Перфоратор BOSCH BFG 2000" width = "218"
+                 height = "150">
+            <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
             <a class = "goods-in-basket" href = "#">купить</a>
             <a class = "goods-in-bookmarks" href = "#">в закладки</a>
             <h3 class = "goods-model">Перфоратор BOSCH BFG 2000</h3>
@@ -131,8 +141,9 @@
             <p class = "goods-price">12500 Р.</p>
           </li>
           <li class = "goods-item">
-            <img class = "goods-image" src="img/..." alt = "Перфоратор BOSCH BFG 3000">
-            <img class = "goods-new" src="img/..."  alt = "новинка">
+            <img class = "goods-image" src = "img/Bosch_BFG_3000.jpg" alt = "Перфоратор BOSCH BFG 3000" width = "218"
+                 height = "150">
+            <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
             <a class = "goods-in-basket" href = "#">купить</a>
             <a class = "goods-in-bookmarks" href = "#">в закладки</a>
             <h3 class = "goods-model">Перфоратор BOSCH BFG 3000</h3>
@@ -140,8 +151,9 @@
             <p class = "goods-price">15500 Р.</p>
           </li>
           <li class = "goods-item">
-            <img class = "goods-image" src="img/..." alt = "Перфоратор BOSCH BFG 6000">
-            <img class = "goods-new" src="img/..."  alt = "новинка">
+            <img class = "goods-image" src = "img/Bosch_BFG_6000.jpg" alt = "Перфоратор BOSCH BFG 6000" width = "218"
+                 height = "150">
+            <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
             <a class = "goods-in-basket" href = "#">купить</a>
             <a class = "goods-in-bookmarks" href = "#">в закладки</a>
             <h3 class = "goods-model">Перфоратор BOSCH BFG 6000</h3>
@@ -149,8 +161,9 @@
             <p class = "goods-price">25500 Р.</p>
           </li>
           <li class = "goods-item">
-            <img class = "goods-image" src="img/..." alt = "Перфоратор BOSCH BFG 2000">
-            <img class = "goods-new" src="img/..."  alt = "новинка">
+            <img class = "goods-image" src = "img/Bosch_BFG_2000.jpg" alt = "Перфоратор BOSCH BFG 2000" width = "218"
+                 height = "150">
+            <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
             <a class = "goods-in-basket" href = "#">купить</a>
             <a class = "goods-in-bookmarks" href = "#">в закладки</a>
             <h3 class = "goods-model">Перфоратор BOSCH BFG 2000</h3>
@@ -158,8 +171,9 @@
             <p class = "goods-price">12500 Р.</p>
           </li>
           <li class = "goods-item">
-            <img class = "goods-image" src="img/..." alt = "Перфоратор BOSCH BFG 3000">
-            <img class = "goods-new" src="img/..."  alt = "новинка">
+            <img class = "goods-image" src = "img/Bosch_BFG_3000.jpg" alt = "Перфоратор BOSCH BFG 3000" width = "218"
+                 height = "150">
+            <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
             <a class = "goods-in-basket" href = "#">купить</a>
             <a class = "goods-in-bookmarks" href = "#">в закладки</a>
             <h3 class = "goods-model">Перфоратор BOSCH BFG 3000</h3>
@@ -167,8 +181,9 @@
             <p class = "goods-price">15500 Р.</p>
           </li>
           <li class = "goods-item">
-            <img class = "goods-image" src="img/..." alt = "Перфоратор BOSCH BFG 6000">
-            <img class = "goods-new" src="img/..."  alt = "новинка">
+            <img class = "goods-image" src = "img/Bosch_BFG_6000.jpg" alt = "Перфоратор BOSCH BFG 6000" width = "218"
+                 height = "150">
+            <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
             <a class = "goods-in-basket" href = "#">купить</a>
             <a class = "goods-in-bookmarks" href = "#">в закладки</a>
             <h3 class = "goods-model">Перфоратор BOSCH BFG 6000</h3>
@@ -176,8 +191,8 @@
             <p class = "goods-price">25500 Р.</p>
           </li>
           <li class = "goods-item">
-            <img class = "goods-image" src="img/..." alt = "Перфоратор BOSCH BFG 2000">
-            <img class = "goods-new" src="img/..."  alt = "новинка">
+            <img class = "goods-image" src = "img/Bosch_BFG_2000.jpg" alt = "Перфоратор BOSCH BFG 2000" width = "218" height = "150">
+            <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
             <a class = "goods-in-basket" href = "#">купить</a>
             <a class = "goods-in-bookmarks" href = "#">в закладки</a>
             <h3 class = "goods-model">Перфоратор BOSCH BFG 2000</h3>
@@ -185,7 +200,7 @@
             <p class = "goods-price">12500 Р.</p>
           </li>
         </ul>
-        <ol class="paginator">
+        <ol class = "paginator">
           <li class = "prev-page">передыдущая</li>
           <li class = "active-page">1</li>
           <li>2</li>
@@ -199,8 +214,11 @@
     <h2 class = "visually-hidden">о инструменте</h2>
     <div class = "container">
       <p>параслов о перфораторах</p>
-      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+        бетоне и камне.<br>
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+        шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
+        совмещены отбойный молоток и ударная дрель.</p>
     </div>
   </section>
 </main>
@@ -208,7 +226,7 @@
 <footer>
   <div class = "footer-top">
     <div class = "container">
-      <a class="market-logo" href = "index.html">техномарт</a>
+      <a class = "market-logo" href = "index.html">техномарт</a>
       <ul>
         <li><a href = "#">Компания</a></li>
         <li><a href = "#">Новости</a></li>

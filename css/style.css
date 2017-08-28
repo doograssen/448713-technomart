@@ -1,0 +1,22 @@
+
+body {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
+}
+
+.section-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #3d546e;
+}
+
+.goods-model {
+  font-family: "PT Sans", Calibri, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
