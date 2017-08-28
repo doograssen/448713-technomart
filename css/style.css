@@ -7,6 +7,17 @@ body {
   font-family: Cuprum, "Trebuchet MS", sans-serif;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
 .section-title {
   font-size: 30px;
   line-height: 30px;
@@ -20,3 +31,4 @@ body {
   line-height: 20px;
   font-weight: bold;
 }
+
