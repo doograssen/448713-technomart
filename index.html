@@ -3,6 +3,8 @@
 <head>
   <meta charset = "utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href = "css/normalize.css" rel = "stylesheet">
   <link href = "css/style.css" rel = "stylesheet">
 </head>
@@ -12,12 +14,14 @@
 <header class = "main-header">
   <h1 class = "visually-hidden">Техномарт. Магазин электроинструмента</h1>
   <section class = "main-user-menu">
-    <h2 class = "visually-hidden">основная навигация</h2>
-    <a class = "market-logo" href = "#">Техномарт</a>
-    <input class = "main-search" type = "text" name = "search" placeholder = "Поиск:">
-    <a class = "bookmarks" href = "#">Закладки: <span class = "bookmarks-amount">0</span></a>
-    <a class = "basket" href = "#">Корзина: <span class = "goods-amount">0</span></a>
-    <a class = "checkout" href = "#">Оформить заказ</a>
+    <div class = "container">
+      <h2 class = "visually-hidden">основная навигация</h2>
+      <a class = "market-logo" href = "#">Техномарт</a>
+      <input class = "main-search" type = "text" name = "search" placeholder = "Поиск:">
+      <a class = "bookmarks" href = "#">Закладки: <span class = "bookmarks-amount">0</span></a>
+      <a class = "basket" href = "#">Корзина: <span class = "goods-amount">0</span></a>
+      <a class = "checkout" href = "#">Оформить заказ</a>
+    </div>
   </section>
   <div class = "header-middle">
     <p class = "market-description">Интернет-магазин<br>
@@ -33,18 +37,18 @@
     </ul>
     <!-- user-navigation после входа -->
     <ul class = "user-navigation">
-      <li><a class = "user-name" href = "#">Равшан Джамшутович</a></li>
+      <li><a class = "user-btn logout" href = "#">Равшан Джамшутович</a></li>
       <li>
         <ul class = "user-info">
-          <li><a href = "#">Мои заказы</a></li>
-          <li><a href = "#">Личный кабинет</a></li>
+          <li><a class = "user-info-link" href = "#">Мои заказы</a></li>
+          <li><a class = "user-info-link" href = "#">Личный кабинет</a></li>
         </ul>
       </li>
     </ul>
     <!-- -->
   </div>
-  <nav class = "main-navigaton">
-    <ul>
+  <nav class = "main-navigation">
+    <ul class="main-navigation-menu">
       <li><a href = "#">Главная</a></li>
       <li><a href = "#">Компания</a></li>
       <li><a href = "#">Каталог</a></li>
@@ -81,142 +85,151 @@
         <a class = "feature-btn" href = "#">бесплатно</a>
       </div>
       <div class = "feature-item slider">
+        <label class = "invisible-text slider-control" for = "slide-1">первый
+            слайд</label>
+        <input class = "features-radio" type = "radio" id = "slide-1" name = "slider-radio" checked>
+        <label class = "invisible-text slider-control" for = "slide-2">второй
+            слайд</label>
+        <input class = "features-radio" type = "radio" id = "slide-2" name = "slider-radio">
         <!-- Первый слайд -->
-        <h3 class = "slide-title">перфораторы</h3>
-        <p class = "slide-title-description">Настояшие мужские игрушки</p>
-        <!-- -->
-        <!-- Второй слайд-->
-        <h3 class = "slide-title">дрели</h3>
-        <p class = "slide-title-description">Соседям на радость!</p>
-        <!-- -->
-        <span class = "prev-slide"></span>
-        <span class = "next-slide"></span>
-        <a class = "site-btn" href = "catalog.html">открыть каталог</a>
-        <label><input class = "features-radio" type = "radio" name = "slider-radio">первый слайд</label>
-        <label><input class = "features-radio" type = "radio" name = "slider-radio">второй слайд</label>
+        <div class = "slider-image">
+          <div class = "first-slide">
+            <h3 class = "slide-title">перфораторы</h3>
+            <p class = "slide-title-description">Настояшие мужские игрушки</p>
+          </div>
+          <!-- -->
+          <!-- Второй слайд-->
+          <div class = "second-slide">
+            <h3 class = "slide-title">дрели</h3>
+            <p class = "slide-title-description">Соседям на радость!</p>
+          </div>
+          <!-- -->
+          <span class = "prev-slide"></span>
+          <span class = "next-slide"></span>
+          <a class = "site-btn slide" href = "catalog.html">открыть каталог</a>
+        </div>
       </div>
     </div>
   </section>
   <section class = "popular-goods">
     <div class = "container">
-      <header>
+      <header class = "section-header">
         <h2 class = "section-title">популярные товары:</h2>
         <a class = "site-btn" href = "#">все популярные товары</a>
       </header>
       <ul class = "goods-list">
         <li class = "goods-item">
           <img class = "goods-image" src = "img/bosch_bfg_9000.jpg" alt = "Перфоратор BOSCH" width = "218"
-               height = "150">
-          <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
+               height = "150" >
+         <!-- <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59" hidden>-->
           <a class = "goods-in-basket" href = "#">купить</a>
           <a class = "goods-in-bookmarks" href = "#">в закладки</a>
           <h3 class = "goods-model">Перфоратор BOSCH BFG 9000</h3>
-          <p class = "goods-old-price">32500 Р.</p>
-          <p class = "goods-price">25500 Р.</p>
+          <p class = "goods-old-price">32500 р.</p>
+          <p class = "goods-price">25500 р.</p>
         </li>
         <li class = "goods-item">
           <img class = "goods-image" src = "img/bosch_bfg_3000.jpg" alt = "Перфоратор BOSCH" width = "218"
                height = "150">
-          <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
+         <!-- <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">-->
           <a class = "goods-in-basket" href = "#">купить</a>
           <a class = "goods-in-bookmarks" href = "#">в закладки</a>
           <h3 class = "goods-model">Перфоратор BOSCH BFG 3000</h3>
-          <p class = "goods-old-price">22500 Р.</p>
-          <p class = "goods-price">15500 Р.</p>
+          <p class = "goods-old-price">22500 р.</p>
+          <p class = "goods-price">15500 р.</p>
         </li>
         <li class = "goods-item">
           <img class = "goods-image" src = "img/bosch_bfg_6000.jpg" alt = "Перфоратор BOSCH" width = "218"
                height = "150">
-          <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
-          <a class = "goods-in-basket" href = "#">купить</a>
-          <a class = "goods-in-bookmarks" href = "#">в закладки</a>
-          <h3 class = "goods-model">Перфоратор BOSCH BFG 6000</h3>
-          <p class = "goods-old-price">30500 Р.</p>
-          <p class = "goods-price">25500 Р.</p>
-        </li>
-        <li class = "goods-item">
-          <img class = "goods-image" src = "img/bosch_bfg_2000.jpg" alt = "Перфоратор BOSCH" width = "218"
-               height = "150">
-          <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
-          <a class = "goods-in-basket" href = "#">купить</a>
-          <a class = "goods-in-bookmarks" href = "#">в закладки</a>
-          <h3 class = "goods-model">Перфоратор BOSCH BFG 2000</h3>
-          <p class = "goods-old-price"></p>
-          <p class = "goods-price">12500 Р.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class = "popular-brands">
-    <div class = "container">
-      <header>
-        <h2 class = "section-title">популярные производители:</h2>
-        <a class = "site-btn" href = "#">все производители</a>
-      </header>
-      <ul class = "goods-list">
-        <li class = "goods-item">
-          <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/bosch.png" alt = "bosch"
-                                                   width = "126" height = "37"></a>
-        </li>
-        <li class = "goods-item">
-          <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/makita.png" alt = "makita"
-                                                   width = "123" height = "40"></a>
-        </li>
-        <li class = "goods-item">
-          <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/dewalt.png" alt = "dewalt"
-                                                   width = "146" height = "44"></a>
-        </li>
-        <li class = "goods-item">
-          <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/interskol.png" alt = "интерскол"
-                                                   width = "184" height = "32"></a>
-        </li>
-        <li class = "goods-item">
-          <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/hitachi.png" alt = "hitachi"
-                                                   width = "169" height = "31"></a>
-        </li>
-        <li class = "goods-item">
-          <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/lg.png" alt = "lg" width = "121"
-                                                   height = "73"></a>
-        </li>
-        <li class = "goods-item">
-          <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/aeg.png" alt = "aeg" width = "151"
-                                                   height = "96"></a>
-        </li>
-        <li class = "goods-item">
-          <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/metabo.png" alt = "metabo"
-                                                   width = "204" height = "69"></a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class = "services">
-    <div class = "container">
-      <header>
-        <h2 class = "section-title">сервисы</h2>
-        <p class = services-promo>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      </header>
-      <section class = "services-slider">
-        <h3 class = "visually-hidden">слайдер сервисы</h3>
-        <ul class = "services-menu">
-          <li>
-            <label for = "services-delivery"><input type = "radio" class = "services-item" id = "services-delivery"
-                                                    name = "services">Доставка</label>
-          </li>
-          <li>
-            <label for = "services-garantie"><input type = "radio" class = "services-item" id = "services-garantie"
-                                                    name = "services">Гарантия</label>
-          </li>
-          <li>
-            <label for = "services-credit"><input type = "radio" class = "services-item" id = "services-credit"
-                                                  name = "services">Кредит</label>
-          </li>
-        </ul>
-        <div class = "services-slides">
-          <!-- Первый слайд -->
+          <!-- <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">-->
+           <a class = "goods-in-basket" href = "#">купить</a>
+           <a class = "goods-in-bookmarks" href = "#">в закладки</a>
+           <h3 class = "goods-model">Перфоратор BOSCH BFG 6000</h3>
+           <p class = "goods-old-price">30500 р.</p>
+           <p class = "goods-price">25500 р.</p>
+         </li>
+         <li class = "goods-item">
+           <img class = "goods-image" src = "img/bosch_bfg_2000.jpg" alt = "Перфоратор BOSCH" width = "218"
+                height = "150">
+           <img class = "goods-new" src = "img/new_flag.png" alt = "новинка" width = "60" height = "59">
+           <a class = "goods-in-basket" href = "#">купить</a>
+           <a class = "goods-in-bookmarks" href = "#">в закладки</a>
+           <h3 class = "goods-model">Перфоратор BOSCH BFG 2000</h3>
+           <p class = "goods-old-price"></p>
+           <p class = "goods-price">12500 р.</p>
+         </li>
+       </ul>
+     </div>
+   </section>
+   <section class = "popular-brands">
+     <div class = "container">
+       <header class = "section-header">
+         <h2 class = "section-title">популярные производители:</h2>
+         <a class = "site-btn" href = "#">все производители</a>
+       </header>
+       <ul class = "goods-list">
+         <li class = "goods-item">
+           <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/bosch.png" alt = "bosch"
+                                                    width = "126" height = "37"></a>
+         </li>
+         <li class = "goods-item">
+           <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/makita.png" alt = "makita"
+                                                    width = "123" height = "40"></a>
+         </li>
+         <li class = "goods-item">
+           <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/dewalt.png" alt = "dewalt"
+                                                    width = "146" height = "44"></a>
+         </li>
+         <li class = "goods-item">
+           <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/interskol.png" alt = "интерскол"
+                                                    width = "184" height = "32"></a>
+         </li>
+         <li class = "goods-item">
+           <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/hitachi.png" alt = "hitachi"
+                                                    width = "169" height = "31"></a>
+         </li>
+         <li class = "goods-item">
+           <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/lg.png" alt = "lg" width = "121"
+                                                    height = "73"></a>
+         </li>
+         <li class = "goods-item">
+           <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/aeg.png" alt = "aeg" width = "151"
+                                                    height = "96"></a>
+         </li>
+         <li class = "goods-item">
+           <a class = "goods-brand" href = "#"><img class = "goods-image" src = "img/metabo.png" alt = "metabo"
+                                                    width = "204" height = "69"></a>
+         </li>
+       </ul>
+     </div>
+   </section>
+   <section class = "services">
+     <div class = "container">
+       <header>
+         <h2 class = "block-title">сервисы</h2>
+         <p class = "services-promo promo">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+       </header>
+       <section class = "services-slider">
+         <h3 class = "visually-hidden">слайдер сервисы</h3>
+         <input class = "services-radio" type = "radio" id = "services-delivery" name = "services" checked>
+         <input class = "services-radio" type = "radio" id = "services-garantie" name = "services">
+         <input class = "services-radio" type = "radio" id = "services-credit" name = "services">
+         <ul class = "services-menu">
+           <li>
+             <label  for = "services-delivery">Доставка</label>
+           </li>
+           <li>
+             <label  for = "services-garantie">Гарантия</label>
+           </li>
+           <li>
+             <label  for = "services-credit">Кредит</label>
+           </li>
+         </ul>
+           <!-- Первый слайд -->
           <div class = "services-slide">
-            <p class = "slide-title">доставка</p>
-            <p class = "slide-description">Мы с удовольствием доставим ваш товар прямо<br>
+            <p class = "services-slide-title">доставка</p>
+            <p class = "promo">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!<br>
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
@@ -224,8 +237,8 @@
           </div>
           <!-- Второй слайд -->
           <div class = "services-slide">
-            <p class = "slide-title">Гарантия</p>
-            <p class = "slide-description">Если купленный у нас товар поломается или заискрит,<br>
+            <p class = "services-slide-title">Гарантия</p>
+            <p class = "promo">Если купленный у нас товар поломается или заискрит,<br>
               а также в случае пожара, спровоцированного его возгаранием,<br>
               вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
               сгоревший товар на новый.<br>
@@ -234,23 +247,22 @@
           </div>
           <!-- Третий слайд -->
           <div class = "services-slide">
-            <p class = "slide-title">Кредит</p>
-            <p class = "slide-description">Залезть в долговую яму стало проще!<br>
+            <p class = "services-slide-title">Кредит</p>
+            <p class = "promo">Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь</p>
             <a class = "site-btn" href = "#">отправить заявку</a>
             <img class = "slide-pic1" src = "img/credit.png" alt = "договор" width = "465" height = "285">
           </div>
-        </div>
       </section>
     </div>
   </section>
   <div class = "about-company">
     <div class = "container">
       <div class = "about-market">
-        <p class = "market-title">компания «техномарт»</p>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+        <p class = "block-title">компания «техномарт»</p>
+        <p class = "promo">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
           равнодушными любителей сэкномить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+        <p class = "promo">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями: </p>
         <ul class = "market-partners">
           <li>
@@ -266,8 +278,8 @@
         <a class = "site-btn" href = "#">подробнее о компании</a>
       </div>
       <div class = "about-contacts">
-        <p class = "contacts-title">контакты</p>
-        <p class = "contacts-promo">Вы можете забрать товар сами,<br>
+        <p class = "block-title">контакты</p>
+        <p class = "contacts-promo promo">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
         <a class = "contacts-map" href = "https://yandex.ru/maps/-/CBUqmMrXhD"><img class = "contacts-map-pic"
                                                                                     src = "img/map.png" alt = "карта"
@@ -278,11 +290,11 @@
   </div>
 </main>
 <!--Подвал -->
-<footer>
+<footer class = "footer">
   <div class = "footer-top">
     <div class = "container">
       <a class = "market-logo" href = "index.html">техномарт</a>
-      <ul>
+      <ul class="footer-navigation">
         <li><a href = "#">Компания</a></li>
         <li><a href = "#">Новости</a></li>
         <li><a href = "#">Каталог</a></li>
@@ -307,18 +319,18 @@
   </div>
   <div class = "footer-bottom">
     <div class = "container">
-      <div class = "copyright">
-        <p class = "copyright">© 2010–2017 Компания «Техномарт»<br>
+      <div class = "footer-copyright">
+        <p>© 2010–2017 Компания «Техномарт»<br>
           Все права защищены</p>
       </div>
       <ul class = "social-btn">
-        <li><a class = "social-vk" href = "https://vk.com/">вконтакте</a></li>
-        <li><a class = "social-fb" href = "https://facebook.com/">facebook</a></li>
-        <li><a class = "social-ig" href = "https://www.instagram.com/">instagram</a></li>
+        <li><a class = "social-vk invisible-text" href = "https://vk.com/">вконтакте</a></li>
+        <li><a class = "social-fb invisible-text" href = "https://facebook.com/">facebook</a></li>
+        <li><a class = "social-ig invisible-text" href = "https://www.instagram.com/">instagram</a></li>
       </ul>
       <div class = "call-back">
         <p>Обратная связь:</p>
-        <p class = "call-back-contact">mail@htmlacademy.ru</p>
+        <a class = "call-back-contact" href = "#">mail@htmlacademy.ru</a>
       </div>
       <div class = "site-developer">
         <p>Разработано —</p>
