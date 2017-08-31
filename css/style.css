@@ -356,13 +356,16 @@ a {
   color: #3d546e;
 }
 
-.goods-item {
-  position: relative;
+.goods-list {
   font-family: "PT Sans", Calibri, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.goods-item {
+  position: relative;
 }
 
 .goods-item:hover img {
