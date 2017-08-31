@@ -28,11 +28,11 @@ a {
   border: 0;
 }
 
-.invisible-text{
+.invisible-text {
   font-size: 0;
 }
 
-.promo{
+.promo {
   font-family: "PT Sans", Calibri, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -56,7 +56,7 @@ a {
 .feature-menu,
 .social-btn,
 .breadcrambs,
-.paginator{
+.paginator {
   list-style: none;
 }
 
@@ -72,9 +72,17 @@ a {
   background-color: #ee3643;
 }
 
+.market-logo:hover {
+  background-color: #ca2c37;
+}
+
+.market-logo:active {
+  background-color: #ba2732;
+}
+
 .main-search:hover,
 .bookmarks:hover,
-.basket:hover{
+.basket:hover {
   background-color: #212a3a;
 }
 
@@ -92,15 +100,17 @@ a {
   color: rgba(255, 255, 255, 0.51);;
   background-color: #518534;
 }
+
 .main-search {
   font-family: Cuprum, "Trebuchet MS", sans-serif;
   color: #ffffff;
   background-color: #293449;
 }
+
 /* search placeholder*/
 
 .main-search::-webkit-input-placeholder {
-   color: #ffffff;
+  color: #ffffff;
 }
 
 .main-search::-moz-placeholder {
@@ -132,7 +142,8 @@ a {
 .main-search:focus:-ms-input-placeholder {
   color: #000000;
 }
- /* -------*/
+
+/* -------*/
 .main-search:hover {
   background-color: #212a3a;
 }
@@ -141,8 +152,6 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
-
-
 
 .basket-full {
   background-color: #ee3643;
@@ -181,11 +190,11 @@ a {
 }
 
 .user-btn:hover,
-.user-info-link:hover{
+.user-info-link:hover {
   color: #ee3643;
 }
 
-.user-btn.logout:hover{
+.user-btn.logout:hover {
   color: #000000;
 }
 
@@ -205,17 +214,18 @@ a {
   background-color: #32425c;
 }
 
-.main-navigation-menu a:hover{
+.main-navigation-menu a:hover {
   background-color: #293449;
 }
 
-.main-navigation-menu a:active{
+.main-navigation-menu a:active {
   color: rgba(255, 255, 255, 0.5);
 }
+
 /* MAIN */
 /* market-features */
 
-.feature-item p{
+.feature-item p {
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
@@ -255,7 +265,7 @@ a {
 }
 
 /*slider */
-.slider{
+.slider {
   position: relative;
 }
 
@@ -263,7 +273,8 @@ a {
   position: absolute;
   bottom: 0;
 }
-.features-radio:first-of-type{
+
+.features-radio:first-of-type {
   left: 0;
 }
 
@@ -271,50 +282,52 @@ a {
   left: 20px;
 }
 
-
-.slider-image{
+.slider-image {
   background-repeat: no-repeat;
   width: 620px;
   height: 266px;
 }
-.slider .second-slide{
+
+.slider .second-slide {
   display: none;
 }
+
 .features-radio:first-of-type:checked ~ .slider-image .first-slide,
-.features-radio:nth-of-type(2):checked ~ .slider-image .second-slide{
+.features-radio:nth-of-type(2):checked ~ .slider-image .second-slide {
   display: block;
 }
 
 .features-radio:first-of-type:checked ~ .slider-image .second-slide,
-.features-radio:nth-of-type(2):checked ~ .slider-image .first-slide{
+.features-radio:nth-of-type(2):checked ~ .slider-image .first-slide {
   display: none;
 }
 
-.features-radio:first-of-type:checked ~ .slider-image{
+.features-radio:first-of-type:checked ~ .slider-image {
   background-image: url("../img/slider_1.jpg");
 }
 
-.features-radio:nth-of-type(2):checked ~ .slider-image{
+.features-radio:nth-of-type(2):checked ~ .slider-image {
   background-image: url("../img/slider_2.jpg");
 }
 
-.slider-control{
+.slider-control {
   position: absolute;
   bottom: 0;
 }
 
-.slide-title{
+.slide-title {
   font-size: 36px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .feature-item .slide-title-description {
-  font-family:  "PT Sans", Calibri, sans-serif;;
+  font-family: "PT Sans", Calibri, sans-serif;;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
 }
+
 /*-----*/
 .site-btn {
   text-transform: uppercase;
@@ -328,9 +341,10 @@ a {
 .site-btn:active {
   background-color: #ba2732;
 }
+
 /* popular-goods */
 
-.section-header{
+.section-header {
   background-color: #f9f5f0;
 }
 
@@ -342,7 +356,7 @@ a {
   color: #3d546e;
 }
 
-.goods-item{
+.goods-item {
   position: relative;
 
   font-family: "PT Sans", Calibri, sans-serif;
@@ -352,11 +366,11 @@ a {
   text-transform: uppercase;
 }
 
-.goods-item:hover img{
+.goods-item:hover img {
   visibility: hidden;
 }
 
-.goods-item:hover a{
+.goods-item:hover a {
   visibility: visible;
 }
 
@@ -376,7 +390,7 @@ a {
   background-color: #ee3643;
 }
 
-.goods-item a{
+.goods-item a {
   position: absolute;
   visibility: hidden;
   font-family: Cuprum, "Trebuchet MS", sans-serif;
@@ -389,15 +403,15 @@ a {
   background-color: #63a63e;
 }
 
-.goods-in-basket:hover{
+.goods-in-basket:hover {
   background-color: #5fbb2d;
 }
 
-.goods-in-basket:active{
+.goods-in-basket:active {
   background-color: #518534;
 }
 
-.goods-in-bookmarks{
+.goods-in-bookmarks {
   left: 0;
   top: 40px;
   color: #32425c;
@@ -409,7 +423,7 @@ a {
 
 /* services */
 
-.services{
+.services {
   background-color: #f4f8f9;
 }
 
@@ -420,8 +434,6 @@ a {
   color: #000000;
   text-transform: uppercase;
 }
-
-
 
 .services-menu li {
   font-size: 21px;
@@ -435,6 +447,7 @@ a {
 .services-radio:nth-of-type(3):not(:checked) ~ .services-slide:nth-of-type(3) {
   display: none;
 }
+
 .services-radio:nth-of-type(1):checked ~ .services-menu li:nth-of-type(1),
 .services-radio:nth-of-type(2):checked ~ .services-menu li:nth-of-type(2),
 .services-radio:nth-of-type(3):checked ~ .services-menu li:nth-of-type(3) {
@@ -447,7 +460,7 @@ a {
   line-height: 24px;
   color: #3d546e;
   text-transform: uppercase;
- }
+}
 
 .market-partners {
   font-size: 18px;
@@ -469,7 +482,7 @@ a {
   opacity: 0.4;
 }
 
-.breadcrambs a{
+.breadcrambs a {
   color: #000000;
 }
 
@@ -488,7 +501,7 @@ a {
   border-bottom: none;
 }
 
-.catalog-filter-caption{
+.catalog-filter-caption {
   font: inherit;
 }
 
@@ -497,7 +510,7 @@ a {
 }
 
 .sort-result,
-.catalog-filter h3{
+.catalog-filter h3 {
   background-color: #f7f3ec;
 }
 
@@ -518,20 +531,20 @@ a {
   line-height: 20px;
 }
 
-.action-btn{
+.action-btn {
   font-family: "PT Sans", Calibri, sans-serif;
   text-transform: uppercase;
 }
 
-.paginator a{
+.paginator a {
   color: #000000;
 }
 
-.active-page a{
+.active-page a {
   color: #ffffff;
 }
 
-.active-page{
+.active-page {
   background-color: #ee3643;
 }
 
@@ -539,35 +552,36 @@ a {
   background-color: #f2f6f8;
 }
 
-.about-instument p:first-child{
+.about-instument p:first-child {
   font-family: Cuprum, "Trebuchet MS", sans-serif;
   font-size: 30px;
   line-height: 24px;
 }
 
-.about-instument p:not(:first-child){
+.about-instument p:not(:first-child) {
   line-height: 24px;
   text-transform: none;
 }
+
 /* FOOTER */
-.footer{
+.footer {
   font-size: 18px;
   line-height: 24px;
   background-color: #32425c;
 }
 
-.footer .market-logo{
+.footer .market-logo {
   font-size: 30px;
   line-height: 30px;
 }
 
 /* footer-middle */
-.feature-menu a{
+.feature-menu a {
   color: #ffd180;
 }
 
 /*footer-bottom*/
-.footer-bottom{
+.footer-bottom {
   font-size: 16px;
   line-height: 18px;
 }
@@ -579,7 +593,7 @@ a {
 .footer-navigation a:hover,
 .feature-menu a:hover,
 .call-back a:hover,
-.site-developer a:hover{
+.site-developer a:hover {
   text-decoration: underline;
 }
 
