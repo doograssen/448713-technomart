@@ -740,6 +740,7 @@ a {
 
 .goods-item:hover .goods-in-bookmarks,
 .goods-item:hover .goods-in-basket{
+  font-size: 14px;
   visibility: visible;
 }
 
