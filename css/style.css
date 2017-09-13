@@ -725,6 +725,7 @@ a {
 
 .goods-item {
   flex-basis: 218px;
+  min-height: 316px;
   position: relative;
   border: 1px solid #eaeaea;
   text-align: center;
@@ -768,6 +769,7 @@ a {
   display: block;
   height: 18px;
   color: #a9a9a9;
+  padding-left: 2px;
   margin: 0;
   margin-bottom: 10px;
   text-decoration: line-through;
@@ -778,7 +780,7 @@ a {
   display: block;
   width: 80px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-left: 41px;
   padding: 10px 30px;
   background-color: #ee3643;
   border-radius: 3px;
@@ -869,15 +871,58 @@ a {
 .brand-item a {
   display: block;
   width: 218px;
+  position: relative;
   border: 1px solid #eaeaea;
   margin-bottom: 20px;
-  line-height: 143px;
+  height: 143px;
   text-align: center;
 }
 
+/* ---позиционирование логотипов -----*/
 .brand-item img {
-  vertical-align: middle;
+  position: absolute;
 }
+
+.brand-item:nth-child(1) img{
+  top: 52px;
+  left: 46px;
+}
+
+.brand-item:nth-child(2) img{
+  top: 49px;
+  left: 47px;
+}
+
+.brand-item:nth-child(3) img{
+  top: 47px;
+  left: 36px;
+}
+
+.brand-item:nth-child(4) img{
+  top: 55px;
+  left: 16px;
+}
+
+.brand-item:nth-child(5) img{
+  top: 57px;
+  left: 27px;
+}
+
+.brand-item:nth-child(6) img{
+  top: 33px;
+  left: 48px;
+}
+
+.brand-item:nth-child(7) img{
+  top: 22px;
+  left: 35px;
+}
+
+.brand-item:nth-child(8) img{
+  top: 33px;
+  left: 10px;
+}
+
 
 .brand-item a:active {
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
@@ -1063,7 +1108,7 @@ a {
 }
 
 .breadcrambs a {
-  padding-right: 40px;
+  padding-right: 41px;
   position: relative;
 }
 
@@ -1101,11 +1146,11 @@ a {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 .catalog .container{
-  margin-bottom: 55px;
+  margin-bottom: 59px;
 }
 
 .filter-by,
@@ -1118,6 +1163,7 @@ a {
   margin: 0;
   margin-bottom: 20px;
   padding: 30px 0;
+  padding-bottom: 29px;
   padding-left: 28px;
   background-color: #f2f6f8;
 }
@@ -1176,14 +1222,6 @@ a {
   line-height: 30px;
   font-weight: bold;
   margin-bottom: 14px;
-}
-
-.firm-group .form-legend {
-  margin-bottom: 13px;
-}
-
-.power-type .form-legend {
-  margin-bottom: 13px;
 }
 
 .form-slider {
@@ -1248,6 +1286,7 @@ a {
 }
 
 .form-slider-price {
+  font-family: "PT Sans", Calibri, sans-serif;
   font-size: 17px;
   line-height: 18px;
   width: 89px;
@@ -1358,12 +1397,13 @@ a {
 
 .sort-result a:not(.invisible-text) {
   color: rgba(0, 0, 0, 0.3);
-  margin-right: 70px;
+  line-height: 14px;
+  margin-right: 68px;
   border-bottom: 1px dotted #ee3643;
 }
 
 .sort-result a.catalog-sortby-function{
-  margin-right: 45px;
+  margin-right: 46px;
 }
 .sort-result a.catalog-sortby-ascend{
   margin-right: 20px;
@@ -1387,9 +1427,6 @@ a {
   color: #ee3643;
   border-bottom: none;
 }
-
-
-
 
 /* ----- результаты сортировки-----*/
 
@@ -1443,7 +1480,7 @@ a {
 
 .about-instument {
   background-color: #f2f6f8;
-  min-height: 225px;
+  min-height: 222px;
   padding-top: 40px;
   padding-bottom: 1px;
 }
