@@ -349,9 +349,13 @@ a {
   position: relative;
 }
 
-.user-info .user-info-link {
+.user-orders {
   position: relative;
-  padding: 8px 18px;
+  padding: 7px 19px;
+}
+
+.user-cabinet {
+  padding: 7px 14px;
 }
 
 .user-info li:first-of-type a:after {
@@ -368,12 +372,11 @@ a {
 
 .user-icon {
   position: absolute;
-  top: 50%;
-  margin-top: -8px;
+  top: 12px;
 }
 
 .user-icon:first-of-type {
-  left: 11px;
+  left: 12px;
 }
 
 .user-icon:nth-of-type(2) {
@@ -381,7 +384,8 @@ a {
 }
 
 .user-btn:hover,
-.user-info-link:hover {
+.user-orders:hover,
+.user-cabinet:hover{
   color: #ee3643;
 }
 
@@ -399,11 +403,13 @@ a {
 
 .user-btn:active,
 .user-btn.logout:active,
-.user-info-link:active {
+.user-orders:active,
+.user-cabinet:active{
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-info-link {
+.user-orders,
+.user-cabinet{
   font-size: 16px;
   color: #32425c;
   text-decoration: underline;
@@ -1059,6 +1065,10 @@ a {
   width: 580px;
 }
 
+.about-market .promo:nth-child(3){
+  width: 400px;
+}
+
 .about-market .promo:last-of-type {
   margin-bottom: 20px;
 }
@@ -1069,6 +1079,10 @@ a {
 
 .about-contacts {
   width: 300px;
+}
+
+.about-contacts .promo{
+  width: 200px;
 }
 
 .contacts-map {
@@ -1552,7 +1566,8 @@ a {
 
 .footer-contacts p {
   margin-top: 0;
-  width: 380px;
+  width: 340px;
+  padding-right: 40px;
   padding-left: 2px;
 }
 
@@ -1654,12 +1669,14 @@ a {
 }
 
 .wright-us{
-
-  padding: 45px 80px;
   border-top: 5px solid #ff5357;
 }
 
-.top {
+.form-container{
+  padding: 45px 80px 0 45px;
+}
+
+.info-block {
   display: flex;
   justify-content: space-between;
 }
@@ -1688,17 +1705,21 @@ a {
 }
 
 .letter-field {
-  width: 460px;
-  min-height: 110px;
+  width: 100%;
   margin-bottom: 15px;
 }
 
-.letter-text{
+.letter-text {
   width: 460px;
   height: 100px;
 }
 
-.form-send{
+.submit-field {
+  padding: 35px 80px;
+  background-color: #f4f4f4;
+}
+
+.form-send {
   font-family: Cuprum, "Trebuchet MS", sans-serif;
   font-size: 14px;
   color: #fff;
