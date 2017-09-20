@@ -284,6 +284,10 @@ a {
   padding-right: 10px;
 }
 
+.market-description span{
+  display: block;
+}
+
 .contacts-phone {
   display: block;
   position: relative;
