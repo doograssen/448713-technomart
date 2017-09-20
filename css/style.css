@@ -344,14 +344,15 @@ a {
   background-color: #ffffff;
 }
 
-.user-navigation li:first-child .user-btn {
+.user-navigation .login {
   margin-right: 10px;
   padding-left: 46px;
 }
 
-.user-logout li:first-child .logout {
+.user-logout .logout {
   margin-right: 0;
   margin-bottom: 7px;
+  padding-left: 46px;
   position: relative;
 }
 
@@ -364,7 +365,7 @@ a {
   padding: 7px 14px;
 }
 
-.user-info li:first-of-type a:after {
+.user-info .user-orders:after {
   content: "";
   display: block;
   position: absolute;
@@ -440,11 +441,11 @@ a {
   padding: 19px 28px 18px 33px;
 }
 
-.main-navigation-menu li:first-child a {
+.main-navigation-menu .menu-first-punkt {
   padding-left: 52px;
 }
 
-.main-navigation-menu li:last-child a {
+.main-navigation-menu .menu-last-punkt {
   padding-right: 53px;
 }
 
@@ -612,10 +613,12 @@ a {
 }
 
 .features-radio:first-of-type:checked ~ .slider-image {
+  background-color: #8d8277;
   background-image: url("../img/slider_1.jpg");
 }
 
 .features-radio:nth-of-type(2):checked ~ .slider-image {
+  background-color: #64544d;
   background-image: url("../img/slider_2.jpg");
 }
 
@@ -728,7 +731,7 @@ a {
 }
 
 .goods-item:hover,
-.brand-item:hover a {
+.brand-item:hover {
   border-color: #ffffff;
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
@@ -858,7 +861,7 @@ a {
   margin-bottom: 65px;
 }
 
-.brand-item a {
+.brand-item {
   display: block;
   width: 218px;
   position: relative;
@@ -873,52 +876,52 @@ a {
   position: absolute;
 }
 
-.brand-item:nth-child(1) img{
+.brand-item .bosch{
   top: 52px;
   left: 46px;
 }
 
-.brand-item:nth-child(2) img{
+.brand-item .makita{
   top: 49px;
   left: 47px;
 }
 
-.brand-item:nth-child(3) img{
+.brand-item .dewalt{
   top: 47px;
   left: 36px;
 }
 
-.brand-item:nth-child(4) img{
+.brand-item .interskol{
   top: 55px;
   left: 16px;
 }
 
-.brand-item:nth-child(5) img{
+.brand-item .hitachi{
   top: 57px;
   left: 27px;
 }
 
-.brand-item:nth-child(6) img{
+.brand-item .lg{
   top: 33px;
   left: 48px;
 }
 
-.brand-item:nth-child(7) img{
+.brand-item .aeg{
   top: 22px;
   left: 35px;
 }
 
-.brand-item:nth-child(8) img{
+.brand-item .metabo{
   top: 33px;
   left: 10px;
 }
 
 
-.brand-item a:active {
+.brand-item:active {
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
-.brand-item a:active img {
+.brand-item:active img {
   opacity: 0.3;
 }
 
@@ -1118,7 +1121,8 @@ a {
   position: relative;
 }
 
-.breadcrambs li:not(:last-child) a:after {
+.breadcrambs .breadcrambs-step:after,
+.breadcrambs .breadcrambs-home:after{
   content: url("../img/icon-right-small.svg");
   position: absolute;
   top: 1px;
@@ -1128,8 +1132,9 @@ a {
   height: 12px;
 }
 
-.breadcrambs li:first-child a:after {
+.breadcrambs .breadcrambs-home:after {
   top: -10px;
+  right: 20px;
 }
 
 .breadcrambs a {
@@ -1381,7 +1386,7 @@ a {
 .form-radio:before {
   content: '';
   position: absolute;
-  left: 2px;
+  left: 3px;
   top: 2px;
   display: block;
   width: 9px;
@@ -1692,17 +1697,6 @@ a {
   text-decoration: none;
 }
 
-
-/*.bg {
-  background-color: rgba(0,0,0,.5);
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 15;
-}
-*/
 .popup {
   display: none;
   position: fixed;
@@ -1714,6 +1708,30 @@ a {
   min-height: 430px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
   z-index: 20;
+}
+
+@keyframes bounce {
+  0% { transform: translateX(-50%) translateY(-2000px); }
+  60% { transform: translateX(-50%) translateY(-130px); }
+  85% { transform: translateX(-50%) translateY(-250px); }
+  100% { transform: translateX(-50%) translateY(-50%); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(-50%) translateY(-50%); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-60%) translateY(-50%); }
+  20%, 40%, 60%, 80% { transform: translateX(-40%) translateY(-50%); }
+}
+
+.modal-show{
+  display: block;
+  animation: bounce;
+  animation-duration: 0.6s;
+}
+
+.modal-error{
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .form-close{
