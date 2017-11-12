@@ -301,14 +301,15 @@ a {
   border: 3px solid #ffffff;
 }
 
+
 .contacts-phone:before {
-  content: "";
+  content: url("../img/icon-phone.svg");
   position: absolute;
   left: 10px;
   top: 50%;
+  width: 19px;
+  height: 19px;
   margin-top: -10px;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
 }
 
 .contacts-adress {
