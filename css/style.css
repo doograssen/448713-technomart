@@ -302,11 +302,13 @@ a {
 }
 
 .contacts-phone:before {
-  content: url("../img/icon-phone.svg");
+  content: "";
   position: absolute;
   left: 10px;
   top: 50%;
   margin-top: -10px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
 }
 
 .contacts-adress {
